@@ -1,38 +1,31 @@
 {
-  "name": "server",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon -L",
     "git": "node ../commit-push.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -w ./tests/**/*.spec.js"
   },
-  "author": "jagProyects",
+  "author": "Henry",
   "license": "ISC",
   "engines": {
     "node": ">=12.18.3",
     "npm": ">=6.14.6"
   },
   "dependencies": {
-    "axios": "^1.6.8",
-    "bcrypt": "^5.1.1",
+    "axios": "^1.6.7",
     "body-parser": "^1.19.0",
-    "concurrently": "^8.2.2",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1",
-    "mysql2": "^3.9.2",
-    "nodemailer": "^6.9.13",
-    "pg": "^8.11.5",
-    "postgres": "^3.4.4",
+    "pg": "^8.5.1",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30",
     "chai": "^4.2.0",
     "mocha": "^10.3.0",
     "nodemon": "^2.0.6",
