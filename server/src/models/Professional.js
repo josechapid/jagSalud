@@ -26,9 +26,8 @@ module.exports = (sequelize) => {
       availability: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
-        unique: true,
       },
-      turno: {
+      turn: {
         type: DataTypes.STRING,
         allowNull: false,
       },
